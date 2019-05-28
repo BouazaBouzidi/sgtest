@@ -79,13 +79,9 @@ public class BankController {
 	}
 	
 	private Account getAccount(long accountId) throws Exception {
-		Account account = null;
-		try {
-			account = accounts.stream().filter(a -> a.getId() == accountId).collect(Collectors.toList()).get(0);
-		} catch (IndexOutOfBoundsException e) {
-			throw new Exception("account with id = " + accountId + " not found");
-		}
-		return account;
+
+			return accounts.stream().filter(a -> a.getId() == accountId).findFirst().orElseThrow(() -> new Exception("account with id = " + accountId + " not found"));
+
 	}
 
 }
