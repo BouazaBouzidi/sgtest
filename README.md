@@ -7,6 +7,7 @@ I did not made any unit tests, because the business logic is pretty simple
 ----
 The project is initilized with 2 bank accounts:
 Account 1: balance is zero, and the accountid is 1.
+
 Account 2: balance is 10000, and the accountid is 2.
 
 ----
