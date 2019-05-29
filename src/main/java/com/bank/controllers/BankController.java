@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.bank.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ import views.OperationView;
 @CrossOrigin(origins = "*")
 @RestController("/")
 public class BankController {
-
+	
 	private List<Account> accounts;
 
 	{
