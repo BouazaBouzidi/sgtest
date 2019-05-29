@@ -1,2 +1,0 @@
-# sgtest
-Bank kata
